@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Dashboard = (props) => {
-    const { ballCount, strikeCount } = props;
+    const { ballCount, strikeCount, foulCount } = props;
 
     return (
         <div className="dashboard">
@@ -15,6 +15,14 @@ const Dashboard = (props) => {
                     className="strike-button"
                     onClick={strikeCount} >
                     Strike
+                </button>
+                <button
+                    className="foul-button"
+                    onClick={foulCount} >
+                    Foul
+                </button>
+                <button className="hit-button">
+                    Hit
                 </button>
             </div>
         </div>

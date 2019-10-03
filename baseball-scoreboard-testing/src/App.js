@@ -26,6 +26,12 @@ function App() {
     }
   };
 
+  const scoreFoul = () => {
+    if (strikeCount !== 2) {
+      setStrikeCount(strikeCount + 1);
+    }
+  };
+
 
 
   return (
@@ -40,6 +46,7 @@ function App() {
       <Dashboard
         ballCount={scoreBall}
         strikeCount={scoreStrike}
+        foulCount={scoreFoul}
       />
     </div>
   );
