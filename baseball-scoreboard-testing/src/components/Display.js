@@ -1,13 +1,15 @@
 import React from 'react';
 
-const Display = () => {
+const Display = (props) => {
+    const { ballCount, strikeCount } = props;
+    
     return (
         <section className="display">
-            <h2>Balls</h2>
             <div className="ball-score">
+                <h2>Balls: {ballCount}</h2>
             </div>
-            <h2>Strikes</h2>
             <div className="strike-score">
+                <h2>Strikes: {strikeCount}</h2>
             </div>
         </section>
     )
