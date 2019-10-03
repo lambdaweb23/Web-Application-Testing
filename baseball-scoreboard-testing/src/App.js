@@ -32,6 +32,10 @@ function App() {
     }
   };
 
+  const scoreHit = () => {
+    setStrikeCount(0);
+    setBallCount(0);
+  };
 
 
   return (
@@ -47,6 +51,7 @@ function App() {
         ballCount={scoreBall}
         strikeCount={scoreStrike}
         foulCount={scoreFoul}
+        hitCount={scoreHit}
       />
     </div>
   );
